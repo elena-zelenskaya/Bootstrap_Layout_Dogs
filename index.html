@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Bootstrap Site</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+            <img class="navbar-logo" src="img/dog.png" alt="dog icon">
+            All about dogs</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">All breeds</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Favorites</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Boxer</a>
+                        <a class="dropdown-item" href="#">French bulldog</a>
+                        <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">More...</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-dark my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4 offset-md-1">
+                    <h1 class="display-1">Dogs are good!</h1>
+                    <h2 class="display-2 text-muted">Some cats aren't bad either...</h2>
+                    <p class="lead">Want to learn more?</p>
+                    <p class="lead">
+                        <a class="btn btn-dark btn-lg" href="#" role="button">Learn more &raquo;</a>
+                    </p>
+                </div>
+                <div class="col-sm-7">
+                    <img src="img/group_of_dogs.jpg" alt="Group of dogs">
+                </div>
+            </div>
+        </div>
+    </div>
+    <main class="container-fluid">
+        <div class="row">
+            <div class="col-sm">
+                <h3 class="display-3">Boxer</h3>
+                <img src="img/boxer.jpg" alt="Boxer dog">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae neque quaerat atque deleniti, ullam, nesciunt sed mollitia nemo culpa vero rerum amet illo qui ipsam inventore eius cupiditate! Suscipit debitis inventore asperiores est fugiat rerum molestiae neque pariatur placeat vero rem aliquam deleniti quas error alias, dignissimos laudantium delectus blanditiis!</p>
+            </div>
+            <div class="col-sm">
+                <h3 class="display-3">French bulldog</h3>
+                <img src="img/french.jpg" alt="French bulldog">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero iusto, ex consequatur totam tenetur voluptate aperiam cum aliquam quos est temporibus repellat sapiente dolores quam delectus tempore quas expedita? Quisquam fuga aliquam possimus magni earum quas temporibus vitae vero nobis illo, sunt facere quod tempore totam numquam deleniti, quos labore?
+                </p>
+            </div>
+            <div class="col-sm">
+                <h3 class="display-3">Quick Survey</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="first_name">Your name:</label>
+                        <input type="email" class="form-control" id="first_name" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <p>How many dogs do you have?</p>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="none" name="survey" value="1">
+                            <label class="form-check-label" for="none">None, and I don't want to</label>                        
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="nonebut" name="survey" value="2">
+                            <label class="form-check-label" for="nonebut">None, but I would like to have one</label>    
+                        </div>                   
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="one" name="survey" value="3">
+                            <label class="form-check-label" for="one">Just one</label>                      
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="two" name="survey" value="4">
+                            <label class="form-check-label" for="two">Two!</label>                        
+                        </div>                
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="more" name="survey" value="5">
+                            <label class="form-check-label" for="more">More than two</label>                        
+                        </div>
+                    </div>           
+                    <div class="form-group">
+                        <label for="source">How did you hear about us?</label>
+                        <select class="form-control" id="source" name="source">
+                            <option value="facebook">Facebook</option>
+                            <option value="instagram">Instagram</option>
+                            <option value="friend">Friend</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+</body>
+</html>
